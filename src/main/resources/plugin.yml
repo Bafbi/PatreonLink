@@ -1,0 +1,30 @@
+name: Patreonlink
+version: '${version}'
+main: fr.bafbi.patreonlink.Patreonlink
+api-version: 1.18
+
+commands:
+    patreonlink:
+        description: "Link your patreon account to the server"
+        usage: "/patreonlink [link|code]"
+        aliases: [plink]
+
+permissions:
+    patreonlink.admin:
+        description: "Allow to use the admin command"
+        default: op
+        children:
+            - patreonlink.profil
+            - patreonlink.admincode
+    patreonlink.link:
+        description: "Link your patreon account to the server"
+        default: true
+    patreonlink.code:
+        description: "Get your patreon link code"
+        default: true
+    patreonlink.profil:
+        description: "Get your patreon profil"
+        default: false
+    patreonlink.admincode:
+        description: "Link the patreon account of the server"
+        default: false
