@@ -1,0 +1,6 @@
+# PatreonLink
+
+## Current state of the plugin
+
+The plugin integrate the patreon api via an fork of there java library make by Booksaw.
+You can curenly login with your patreon account.
